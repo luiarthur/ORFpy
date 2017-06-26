@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#python setup.py test
+python setup.py nosetests -s
