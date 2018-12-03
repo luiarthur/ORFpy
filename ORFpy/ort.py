@@ -168,7 +168,7 @@ class SuffStats:
             return sum(map(lambda x: -x/n * log2(x/n + self.eps), self.counts)) # entropy
         else:
             prd = self.pred()
-            return sqrt( self.ss/n - prd*prd ) # sd of node
+            return np.sqrt( self.ss/n - prd*prd ) # sd of node
 
 class Test:
     def __init__(self,dim,loc,numClasses):
